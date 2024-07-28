@@ -4,7 +4,8 @@ PROFITPilot is a data analytics tool for businesses to analyze and visualize rev
 - TABLE OF CONTENTS:
     - Features
     - Setup
-    - Running the Project
+    - Docker
+    - Running the Project without docker
     - Running main.py
     - Running Tests with tests.py
     - Running the streamlit_app.py
@@ -26,12 +27,57 @@ STEPS:
        - pandas
        - streamlit
 
-TERMINAL COMMANDS TO INSTALL pandas, streamlit:
+PREREQUISITES:
+- Ensure you have the following installed on your system:
+    - Docker
+    - Docker Compose
+    
+STEPS TO RUN THE APPLICATION:
+ - Clone the repository to your local machine:
+        "git clone https://github.com/Prajin0802/tanX.fi-Online-Assessment---PROFITPilot.git"
+ - Download the Orders Data
+        - Ensure you have the orders.csv file in the root directory of the repository. If you don't have it, request the file from the project maintainer and place it in the root directory.
+ - Pull the Docker Images
+        - Pull the necessary Docker images from Docker Hub using the following commands:
+   
+            docker pull prajincmakam/profitpilot-main:latest
+            docker pull prajincmakam/profitpilot-streamlit_app:latest
+            docker pull prajincmakam/profitpilot-tests:latest
+            
+ - Run the Application with Docker Compose
+ - Use Docker Compose to start all services:
+   
+        docker-compose up
+   
+THIS WILL START THE FOLLOWING SERVICES:
+- main_app: Processes the revenue metrics.
+- streamlit_app: Runs the Streamlit web application.
+- tests_app: Runs the unit tests.
+
+  
+ACCESS THE STREAMLIT APPLICATION:
+- Once the containers are running, you can access the Streamlit application by opening a web browser and navigating to:
+    
+        http://localhost:8501
+
+STOPPING THE APPLICATION:
+- To stop the application, press Ctrl+C in the terminal where Docker Compose is running. Alternatively, you can run:
+
+        docker-compose down
+    
+ADDITIONAL NOTES:
+- Ensure that the orders.csv file is up-to-date and placed in the root directory before starting the application.
+- If you encounter any issues, check the container logs for more details:
+
+        docker-compose logs
+
+WITHOUT DOCKER:
+- TERMINAL COMMANDS TO INSTALL pandas, streamlit:
   - type this command in the terminal -> "pip install pandas streamlit"
   - to check the installed packages -> "pip list"
   - to check the version and other properties of the installed packages -> "pip show pandas" and "pip show streamlit"
 
-TERMINAL COMMANDS TO RUN the project files:
+- TERMINAL COMMANDS TO RUN the project files:
   - to run 'main.py' script -> "python main.py"
   - to run 'tests.py' script -> "python -m unittest tests.py"
   - to run 'streamlit_app.py' script -> "streamlit run streamlit_app.py"
