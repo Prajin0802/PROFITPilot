@@ -11,7 +11,7 @@ from main import (
 )
 
 # Load the data
-file_path = "C:/Users/Prajin/yield/orders.csv"
+file_path = "orders.csv"
 data = read_data(file_path)
 data["total_price"] = data["product_price"] * data["quantity"]
 
