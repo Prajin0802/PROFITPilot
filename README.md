@@ -25,9 +25,10 @@ STEPS:
   4. Install Dependencies:
        - pandas
        - streamlit
+       - unittest
 
 TERMINAL COMMANDS TO INSTALL pandas, streamlit:
-  - type this command in the terminal -> "pip install pandas streamlit"
+  - type this command in the terminal -> "pip install pandas streamlit unittest"
   - to check the installed packages -> "pip list"
   - to check the version and other properties of the installed packages -> "pip show pandas" and "pip show streamlit"
 
