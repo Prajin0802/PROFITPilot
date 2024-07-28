@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  main_app:
+    image: profitpilot-main
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: [ "python", "main.py" ]
+    volumes:
+      - ./orders.csv:/app/orders.csv
+
+  streamlit_app:
+    image: profitpilot-streamlit_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    command: [ "streamlit", "run", "streamlit_app.py" ]
+    volumes:
+      - ./orders.csv:/app/orders.csv
+
+  tests_app:
+    image: profitpilot-tests
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./orders.csv:/app/orders.csv
+    command: [ "python", "-m", "unittest", "discover" ]
