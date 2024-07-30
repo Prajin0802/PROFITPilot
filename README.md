@@ -10,7 +10,6 @@ PROFITPilot is a data analytics tool for businesses to analyze and visualize rev
     - Running Tests with tests.py
     - Running the streamlit_app.py
     - Project Structure
-    - Dependencies
 
 FEATURES:
   - Monthly Revenue Analysis: View and analyze revenue trends by month.
@@ -80,5 +79,14 @@ WITHOUT DOCKER:
 
 - TERMINAL COMMANDS TO RUN the project files:
   - to run 'main.py' script -> "python main.py"
-  - to run 'tests.py' script -> "python -m unittest tests.py"
+  - to run 'tests.py' script -> "python tests.py"
   - to run 'streamlit_app.py' script -> "streamlit run streamlit_app.py"
+
+- PROJECT STRUCTURE:
+    - .dockerignore -> for ignoring pycache(pyc) files, just in case
+    - Dockerfile -> for imaging and copying directory to docker
+    - docker-compose.yml -> contains all the relevant services
+    - main.py -> python script to compute the tasks from 'orders.csv'
+    - orders.csv -> sample dataset for the task
+    - streamlit_app.py -> A web view for visualising relevant graphs
+    - tests.py -> to test the script with manually calculated expected values
