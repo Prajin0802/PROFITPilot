@@ -10,6 +10,7 @@ PROFITPilot is a data analytics tool for businesses to analyze and visualize rev
     - Running Tests with tests.py
     - Running the streamlit_app.py
     - Project Structure
+    - Demo video
 
 FEATURES:
   - Monthly Revenue Analysis: View and analyze revenue trends by month.
@@ -90,3 +91,7 @@ WITHOUT DOCKER:
     - orders.csv -> sample dataset for the task
     - streamlit_app.py -> A web view for visualising relevant graphs
     - tests.py -> to test the script with manually calculated expected values
+
+- DEMO VIDEO:
+
+      https://drive.google.com/file/d/1DU1v1IbtHAJcU5S0NjWQ3rI6nOgzBWwz/view?usp=sharing
