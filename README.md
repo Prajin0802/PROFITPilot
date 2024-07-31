@@ -36,8 +36,8 @@ STEPS TO RUN THE APPLICATION:
  - Clone the repository to your local machine:
 
        git clone https://github.com/Prajin0802/tanX.fi-Online-Assessment---PROFITPilot.git
- - Download the Orders Data
-        - Ensure you have the orders.csv file in the root directory of the repository. If you don't have it, request the file from the project maintainer and place it in the root directory.
+
+- Ensure you have all the files, especially the orders.csv file in the same directory while you are cloning the repository so that no issues occur while pulling the images and running them.
  - Pull the Docker Images
         - Pull the necessary Docker images from Docker Hub using the following commands:
    
@@ -51,9 +51,11 @@ STEPS TO RUN THE APPLICATION:
         docker-compose up
    
 THIS WILL START THE FOLLOWING SERVICES:
-- main_app: Processes the revenue metrics.
-- streamlit_app: Runs the Streamlit web application.
-- tests_app: Runs the unit tests.
+- main_app: Processes the revenue metrics and displays the output.
+- streamlit_app: Runs the Streamlit web application, gives you a link which will look something like this,click on it
+
+      http://localhost:8501
+- tests_app: Runs the unit tests,  gives the output 'OK' as all the test cases pass.
 
   
 ACCESS THE STREAMLIT APPLICATION:
