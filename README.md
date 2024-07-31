@@ -35,7 +35,7 @@ PREREQUISITES:
 STEPS TO RUN THE APPLICATION:
  - Clone the repository to your local machine:
 
-       "git clone https://github.com/Prajin0802/tanX.fi-Online-Assessment---PROFITPilot.git"
+       git clone https://github.com/Prajin0802/tanX.fi-Online-Assessment---PROFITPilot.git
  - Download the Orders Data
         - Ensure you have the orders.csv file in the root directory of the repository. If you don't have it, request the file from the project maintainer and place it in the root directory.
  - Pull the Docker Images
