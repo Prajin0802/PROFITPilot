@@ -1,4 +1,4 @@
-# tanX.fi Online Assessment Task - PROFITPilot
+PROFITPilot
 PROFITPilot is a data analytics tool for businesses to analyze and visualize revenue. It offers insights into monthly revenue, product contributions, customer revenue, and identifies top customers. Using Streamlit, it provides interactive charts for easy exploration and decision-making. Currently it uses a custom sample dataset 'orders.csv'.
 
 - TABLE OF CONTENTS:
@@ -94,6 +94,6 @@ WITHOUT DOCKER:
     - streamlit_app.py -> A web view for visualising relevant graphs
     - tests.py -> to test the script with manually calculated expected values
 
-- DEMO VIDEO:
+- DEMO VIDEO: (without docker)
 
       https://drive.google.com/file/d/1DU1v1IbtHAJcU5S0NjWQ3rI6nOgzBWwz/view?usp=sharing
